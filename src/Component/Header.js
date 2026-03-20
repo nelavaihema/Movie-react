@@ -1,10 +1,12 @@
 import React from "react";
 
 const Header = () => {
-  return (
-    <div style={{ textAlign: "center", backgroundColor: "#333", color: "white", padding: "20px" }}>
-      <h1 style={{ fontSize: "2rem", margin: 0 }}>🎬 Movie Review App</h1>
-    </div>
+ return (
+    <header className="bg-sky-400 text-white text-center py-4 shadow-md">
+      <h1 className="text-2xl font-bold">
+        🎬 Movie Review App
+      </h1>
+    </header>
   );
 };
 

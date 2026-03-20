@@ -1,0 +1,124 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "RRR",
+      "year": 2022,
+      "genre": "Action",
+      "runtime": "182 min",
+      "cast": "NTR, Ram Charan, Alia Bhatt",
+      "director": "S. S. Rajamouli",
+      "rating": 5,
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZOqyQlaQ0v7TP5KlXvLJuPYwbVgABXCjXvo1YNvfUscXJ1KHuxIB-w1zdd8mdX1HvdfcnauDrrDJwymScfqEr0E16tzUbE315lKAXJ9UNwYeMIFTpVIH6EifNeK2C7QCockpOKgT2qqPNnXDl4VglpYxnxeB4_l-31Ob_LqOeu7nM2yfiJ84-dr4l/w680/IMG_20220325_201306_032.jpg",
+      "plot": "A fictional story of two legendary revolutionaries."
+    },
+    {
+      "id": 2,
+      "title": "Pushpa",
+      "year": 2021,
+      "genre": "Action",
+      "runtime": "179 min",
+      "cast": "Allu Arjun, Rashmika Mandanna",
+      "director": "Sukumar",
+      "rating": 4,
+      "image": "http://www.trendbuzz.in/wp-content/uploads/2021/03/Pusha-1-1024x676.jpg",
+      "plot": "A laborer rises in the red sandalwood smuggling world."
+    },
+    {
+      "id": 3,
+      "title": "Sita Ramam",
+      "year": 2022,
+      "genre": "Drama",
+      "runtime": "163 min",
+      "cast": "Dulquer Salmaan, Mrunal Thakur",
+      "director": "Hanu Raghavapudi",
+      "rating": 4,
+      "image": "https://www.koimoi.com/wp-content/new-galleries/2022/09/sita-ramam-movie-review-002.jpg",
+      "plot": "A love story revealed through letters."
+    },
+    {
+      "id": 4,
+      "title": "Bheemla Nayak",
+      "year": 2022,
+      "genre": "Action",
+      "runtime": "145 min",
+      "cast": "Pawan Kalyan, Rana Daggubati",
+      "director": "Saagar K Chandra",
+      "rating": 3,
+      "image": "https://images.indianexpress.com/2022/02/bheemla-nayak-trailer-1200.jpg",
+      "plot": "A clash between a cop and an ex-havildar."
+    },
+    {
+      "id": 5,
+      "title": "Ala Vaikunthapurramuloo",
+      "year": 2020,
+      "genre": "Comedy",
+      "runtime": "165 min",
+      "cast": "Allu Arjun, Pooja Hegde",
+      "director": "Trivikram Srinivas",
+      "rating": 4,
+      "image": "https://wallpaperaccess.com/full/2349627.jpg",
+      "plot": "A man discovers his real family and identity."
+    },
+    {
+      "id": 6,
+      "title": "Bahubali: The Beginning",
+      "year": 2015,
+      "genre": "Action",
+      "runtime": "159 min",
+      "cast": "Prabhas, Rana Daggubati, Anushka",
+      "director": "S. S. Rajamouli",
+      "rating": 5,
+      "image": "https://wallpapers.oneindia.com/ph-1024x768/2015/07/bahubali_143573018650.jpg",
+      "plot": "A young man learns about his royal heritage."
+    },
+    {
+      "id": 7,
+      "title": "Bahubali 2",
+      "year": 2017,
+      "genre": "Action",
+      "runtime": "167 min",
+      "cast": "Prabhas, Rana Daggubati",
+      "director": "S. S. Rajamouli",
+      "rating": 5,
+      "image": "https://image.airtel.tv/SONYLIV_VOD/SONYLIV_VOD_MOVIE_1000007714/LANDSCAPE_169/bahubali_2_12dec_landscape_thumb.jpg",
+      "plot": "The conclusion of Mahishmati kingdom saga."
+    },
+    {
+      "id": 8,
+      "title": "Jersey",
+      "year": 2019,
+      "genre": "Drama",
+      "runtime": "160 min",
+      "cast": "Nani, Shraddha Srinath",
+      "director": "Gowtam Tinnanuri",
+      "rating": 4,
+      "image": "https://timesofindia.indiatimes.com/photo/68843562/size-150538/68843562.jpg",
+      "plot": "A cricketer returns to fulfill his son's dream."
+    },
+    {
+      "id": 9,
+      "title": "F3",
+      "year": 2022,
+      "genre": "Comedy",
+      "runtime": "148 min",
+      "cast": "Venkatesh, Varun Tej",
+      "director": "Anil Ravipudi",
+      "rating": 3,
+      "image": "https://1.bp.blogspot.com/-G5rGnqWVsPc/YFyF9LUt0kI/AAAAAAAAaZA/vgDGzUasiJcyN-RPd0n7eu9CHDjbCfhPACLcBGAsYHQ/w1200-h630-p-k-no-nu/F3-movie-poster.jpg",
+      "plot": "A fun story about greed and money."
+    },
+    {
+      "id": 10,
+      "title": "Sarkaru Vaari Paata",
+      "year": 2022,
+      "genre": "Action",
+      "runtime": "162 min",
+      "cast": "Mahesh Babu, Keerthy Suresh",
+      "director": "Parasuram",
+      "rating": 4,
+      "image": "https://i.ytimg.com/vi/27ilJFcWXik/maxresdefault.jpg",
+      "plot": "A man fights against banking scams."
+    }
+  ]
+}
