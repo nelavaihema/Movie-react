@@ -42,6 +42,10 @@ const Search = ({ search, setSearch, genre, setGenre, year, setYear }) => {
           style={{ padding: "8px", borderRadius: "4px", border: "1px solid #ccc" }}
         >
           <option>All Years</option>
+          <option>2026</option>
+          <option>2025</option>
+          <option>2024</option>
+          <option>2023</option>
           <option>2022</option>
           <option>2021</option>
           <option>2020</option>

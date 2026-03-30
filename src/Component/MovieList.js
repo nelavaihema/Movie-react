@@ -27,12 +27,10 @@ const MovieList = ({ movies, setSelectedMovie }) => {
               <h2 className="text-lg font-bold">{movie.title}</h2>
               <p className="text-gray-600">{movie.genre}</p>
 
-              {/* ✅ Static Average */}
               <div className="text-yellow-500">
                 Avg: {"⭐".repeat(movie.rating)}
               </div>
 
-              {/* ✅ Your Rating */}
               {getUserRating(movie.id) > 0 && (
                 <div className="text-green-500 text-sm">
                   Your: {"⭐".repeat(getUserRating(movie.id))}
