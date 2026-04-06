@@ -4,7 +4,6 @@ const Search = ({ search, setSearch, genre, setGenre, year, setYear }) => {
   return (
     <div style={{ backgroundColor: "#f0f0f0", padding: "20px", textAlign: "center" }}>
 
-      {/* Search with X */}
       <div style={{ marginBottom: "15px", position: "relative", display: "inline-block" }}>
         <input
           value={search}
@@ -23,36 +22,33 @@ const Search = ({ search, setSearch, genre, setGenre, year, setYear }) => {
         )}
       </div>
 
-      {/* Filters */}
-      <div style={{ display: "flex", gap: "10px", justifyContent: "center", marginTop: "15px" }}>
+      <div style={{ display: "flex", gap: "10px", justifyContent: "center" }}>
+
         <select
           value={genre}
           onChange={(e) => setGenre(e.target.value)}
-          style={{ padding: "8px", borderRadius: "4px", border: "1px solid #ccc" }}
+          style={{ padding: "8px", borderRadius: "4px" }}
         >
           <option>All Genres</option>
           <option>Action</option>
-          <option>Drama</option>
-          <option>Comedy</option>
+          <option>Adventure</option>
+          <option>Sci-Fi</option>
+           <option>Crime</option>
+            <option>Drama</option>
+             <option>Animation</option>
         </select>
 
         <select
           value={year}
           onChange={(e) => setYear(e.target.value)}
-          style={{ padding: "8px", borderRadius: "4px", border: "1px solid #ccc" }}
+          style={{ padding: "8px", borderRadius: "4px" }}
         >
           <option>All Years</option>
-          <option>2026</option>
-          <option>2025</option>
-          <option>2024</option>
-          <option>2023</option>
-          <option>2022</option>
-          <option>2021</option>
-          <option>2020</option>
-          <option>2019</option>
+          {[2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019].map((y) => (
+            <option key={y}>{y}</option>
+          ))}
         </select>
 
-        {/* Clear Button */}
         {(search || genre !== "All Genres" || year !== "All Years") && (
           <button
             onClick={() => {
@@ -60,7 +56,14 @@ const Search = ({ search, setSearch, genre, setGenre, year, setYear }) => {
               setGenre("All Genres");
               setYear("All Years");
             }}
-            style={{ padding: "8px 15px", backgroundColor: "#007bff", color: "white", border: "none", borderRadius: "4px", cursor: "pointer" }}
+            style={{
+              padding: "8px 15px",
+              backgroundColor: "#007bff",
+              color: "white",
+              border: "none",
+              borderRadius: "4px",
+              cursor: "pointer"
+            }}
           >
             Clear
           </button>

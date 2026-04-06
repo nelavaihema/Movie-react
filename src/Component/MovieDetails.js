@@ -42,12 +42,10 @@ const MovieDetails = ({ movie, onClose }) => {
         <p style={{ marginBottom: "5px" }}><b>Cast:</b> {movie.cast}</p>
         <p style={{ marginBottom: "15px" }}><b>Director:</b> {movie.director}</p>
 
-        {/* ✅ Static Average */}
         <div style={{ color: "#ffc107", marginBottom: "15px" }}>
           <b>Average Rating:</b> {"⭐".repeat(Math.round(movie.rating))}
         </div>
 
-        {/* ✅ Your Rating */}
         <div style={{ backgroundColor: "#f0f8ff", padding: "15px", borderRadius: "4px" }}>
           {userRating === 0 ? (
             <div>

@@ -4,50 +4,73 @@ import Search from "./Component/Search";
 import MovieList from "./Component/MovieList";
 import MovieDetails from "./Component/MovieDetails";
 
+const API_KEY = "7ab6a23f";
+
 function App() {
   const [movies, setMovies] = useState([]);
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState("batman");
   const [genre, setGenre] = useState("All Genres");
   const [year, setYear] = useState("All Years");
   const [selectedMovie, setSelectedMovie] = useState(null);
 
- useEffect(() => {
-  fetch("https://api.imdbapi.dev/titles")
-    .then((res) => res.json())
-    .then((data) => {
-      // convert API data → your UI format
-      const formatted = data.titles.map((item) => ({
-        id: item.id,
-        title: item.primaryTitle || "No Title",
-        image: item.primaryImage?.url || "https://via.placeholder.com/300",
-        genre: item.genres?.[0] || "Unknown",
-        year: item.startYear || "N/A",
-        rating: Math.round(item.rating?.aggregateRating || 0),
-        plot: item.plot || "No description available",
-        runtime: item.runtimeSeconds
-          ? `${Math.floor(item.runtimeSeconds / 60)} min`
-          : "N/A",
-        cast: "N/A",      
-        director: "N/A",  
-      }));
+  useEffect(() => {
+    const fetchMovies = async () => {
+      try {
+        const res = await fetch(
+          `https://www.omdbapi.com/?s=${search}&apikey=${API_KEY}`
+        );
+        const data = await res.json();
 
-      setMovies(formatted);
-    })
-    .catch((err) => console.error("Error:", err));
-}, []);
+        if (data.Search) {
+          const detailedMovies = await Promise.all(
+            data.Search.map(async (item) => {
+              const res2 = await fetch(
+                `https://www.omdbapi.com/?i=${item.imdbID}&apikey=${API_KEY}`
+              );
+              const details = await res2.json();
+
+              return {
+                id: details.imdbID,
+                title: details.Title,
+                image:
+                  details.Poster !== "N/A"
+                    ? details.Poster
+                    : "https://via.placeholder.com/300",
+                genre: details.Genre,
+                year: details.Year,
+                rating:
+                  Math.round(parseFloat(details.imdbRating)) || 0,
+                plot: details.Plot,
+                runtime: details.Runtime,
+                cast: details.Actors,
+                director: details.Director,
+              };
+            })
+          );
+
+          setMovies(detailedMovies);
+        } else {
+          setMovies([]);
+        }
+      } catch (error) {
+        console.error("Error fetching movies:", error);
+      }
+    };
+
+    fetchMovies();
+  }, [search]);
 
   const filteredMovies = movies.filter((movie) => {
     return (
-      movie.title.toLowerCase().includes(search.toLowerCase()) &&
-      (genre === "All Genres" || movie.genre === genre) &&
-      (year === "All Years" || movie.year.toString() === year)
+      (genre === "All Genres" || movie.genre.includes(genre)) &&
+      (year === "All Years" || movie.year === year)
     );
-  })
-  .slice(0, 10);
+  });
 
   return (
     <div>
       <Header />
+
       <Search
         search={search}
         setSearch={setSearch}
@@ -56,8 +79,16 @@ function App() {
         year={year}
         setYear={setYear}
       />
-      <MovieList movies={filteredMovies} setSelectedMovie={setSelectedMovie} />
-      <MovieDetails movie={selectedMovie} onClose={() => setSelectedMovie(null)} />
+
+      <MovieList
+        movies={filteredMovies}
+        setSelectedMovie={setSelectedMovie}
+      />
+
+      <MovieDetails
+        movie={selectedMovie}
+        onClose={() => setSelectedMovie(null)}
+      />
     </div>
   );
 }
