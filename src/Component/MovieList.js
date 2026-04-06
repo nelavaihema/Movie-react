@@ -9,7 +9,7 @@ const MovieList = ({ movies, setSelectedMovie }) => {
   };
 
   const handleClick = (movie) => {
-    fetch(`https://www.omdbapi.com/?i=${movie.id}&apikey=${API_KEY}`)
+    fetch(`https://www.omdbapi.com/?i=${movie.imdbID}&apikey=${API_KEY}`)
       .then((res) => res.json())
       .then((data) => {
         setSelectedMovie({
@@ -38,7 +38,7 @@ const MovieList = ({ movies, setSelectedMovie }) => {
       ) : (
         movies.map((movie) => (
           <div
-            key={movie.id}
+          key={movie.id + Math.random()}
             onClick={() => handleClick(movie)}
             className="bg-white shadow rounded cursor-pointer hover:scale-105 transition"
           >
@@ -63,9 +63,9 @@ const MovieList = ({ movies, setSelectedMovie }) => {
                 Avg: {"⭐".repeat(movie.rating)}
               </div>
 
-              {getUserRating(movie.id) > 0 && (
+              {getUserRating(movie.imdbID) > 0 && (
                 <div className="text-green-500 text-sm">
-                  Your: {"⭐".repeat(getUserRating(movie.id))}
+                  Your: {"⭐".repeat(getUserRating(movie.imdbID))}
                 </div>
               )}
             </div>

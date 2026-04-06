@@ -44,7 +44,7 @@ const Search = ({ search, setSearch, genre, setGenre, year, setYear }) => {
           style={{ padding: "8px", borderRadius: "4px" }}
         >
           <option>All Years</option>
-          {[2005,20022,2016,1995,1989,1992,2017,1992,1997].map((y) => (
+          {[2005,2022,2016,1995,1989,1992,2017,1997].map((y) => (
             <option key={y}>{y}</option>
           ))}
         </select>
