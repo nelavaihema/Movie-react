@@ -1,70 +1,125 @@
-# Getting Started with Create React App
+<h1 align="center">Hi 👋, I'm Nelavai Hema</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">
+Frontend Developer | React.js Developer | Full Stack Learner | GenAI Enthusiast
+</h3>
 
-## Available Scripts
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?color=36BCF7&lines=Frontend+Developer;React.js+Developer;Full+Stack+Developer;GenAI+Enthusiast;TypeScript+Developer" />
+</p>
 
-In the project directory, you can run:
+---
 
-### `npm start`
+# 👩‍💻 About Me
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 💼 Frontend Developer at HCL Technologies
+- ⚛️ Skilled in React.js, TypeScript, JavaScript, Next.js
+- 🚀 3.6+ years of experience in frontend development
+- 🤖 Interested in Full Stack Development & GenAI
+- 📊 Worked on enterprise dashboards, automation systems & AI-based applications
+- 🔥 Experience with REST APIs, GraphQL, AWS & scalable UI architecture
+- 🌱 Currently learning Angular, Node.js & MongoDB
+- 📍 Chennai, India
+- 📫 Email: **nelavaihema@gmail.com**
+- 🌐 Portfolio: **https://job-seeker-portfolio-91eq.bolt.host/**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+# 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="left">
 
-### `npm run build`
+<img src="https://skillicons.dev/icons?i=react" />
+<img src="https://skillicons.dev/icons?i=js" />
+<img src="https://skillicons.dev/icons?i=ts" />
+<img src="https://skillicons.dev/icons?i=html" />
+<img src="https://skillicons.dev/icons?i=css" />
+<img src="https://skillicons.dev/icons?i=tailwind" />
+<img src="https://skillicons.dev/icons?i=nextjs" />
+<img src="https://skillicons.dev/icons?i=express" />
+<img src="https://skillicons.dev/icons?i=nodejs" />
+<img src="https://skillicons.dev/icons?i=mongodb" />
+<img src="https://skillicons.dev/icons?i=redux" />
+<img src="https://skillicons.dev/icons?i=git" />
+<img src="https://skillicons.dev/icons?i=github" />
+<img src="https://skillicons.dev/icons?i=vscode" />
+<img src="https://skillicons.dev/icons?i=aws" />
+<img src="https://skillicons.dev/icons?i=figma" />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# 📌 Projects
 
-### `npm run eject`
+## ☁️ Cloud Hygiene Automation Platform
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Developed enterprise cloud compliance dashboards
+- Built reusable and scalable React.js UI components
+- Integrated REST APIs and Grafana analytics
+- Improved performance and responsive UI design
+- Worked with AWS cloud monitoring systems
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🎙️ Voice Mail To Text (VM2TXT)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Built voicemail-to-text automation using AWS Transcribe
+- Worked with ECS auto-scaling and DynamoDB
+- Automated large-scale cleanup scripts
+- Improved system performance and reliability
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🤖 GenAI Ticketing Platform
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Developed chatbot workflow management system
+- Built ticket analytics dashboards
+- Integrated GraphQL APIs
+- Created role-based dashboards and admin modules
+- Focused on responsive UI and performance optimization
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# 📈 GitHub Stats
 
-### Analyzing the Bundle Size
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=nelavaihema&show_icons=true&theme=radical" />
+</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nelavaihema&layout=compact&theme=radical" />
+</p>
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# 🌐 Connect With Me
 
-### Advanced Configuration
+<p align="left">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<a href="https://www.linkedin.com/in/nelavai-hema-20527920a/" target="_blank">
+  <img src="https://skillicons.dev/icons?i=linkedin" height="40"/>
+</a>
 
-### Deployment
+<a href="https://github.com/nelavaihema" target="_blank">
+  <img src="https://skillicons.dev/icons?i=github" height="40"/>
+</a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<a href="https://job-seeker-portfolio-91eq.bolt.host/" target="_blank">
+  <img src="https://skillicons.dev/icons?i=webflow" height="40"/>
+</a>
 
-### `npm run build` fails to minify
+</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+# 📚 Certifications
+
+- 🎓 IIT-M Pravartak Certified Full Stack Development Course With AI Tools
+- ⚛️ React.js Training Certification
+
+---
+
+<p align="center">
+  ⭐ Code • Learn • Build • Repeat ⭐
+</p>
